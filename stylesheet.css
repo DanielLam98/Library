@@ -1,0 +1,81 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #659dbd;
+}
+#LibraryTitle {
+  text-align: center;
+  color: white;
+}
+#wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.close-button {
+  float: right;
+}
+.modal {
+  opacity: 0;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -300px;
+  margin-left: -250px;
+  background-color: white;
+  padding: 15px;
+  pointer-events: none;
+}
+.modal p {
+  text-align: center;
+  width: 100%;
+}
+.modal.active {
+  opacity: 1;
+}
+.modal form label {
+  display: block;
+}
+
+.modal form input {
+  display: block;
+  width: 100%;
+}
+
+.tableOuter {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  background-color: #1e2227;
+}
+table thead th {
+  text-transform: uppercase;
+  color: white;
+  background-color: #1e2227;
+  width: 20%;
+}
+
+table td {
+  background-color: white;
+  border: 1px solid rgb(204, 204, 204);
+}
+table tr button {
+  width: 100%;
+  border: none;
+  background-color: #42cc8c;
+  color: black;
+  border-radius: 10px;
+}
+table tr button:hover {
+  border: 1px solid black;
+}

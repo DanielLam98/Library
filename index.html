@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="LibraryTitle">My Personal Library</h1>
+    <div id="wrapper">
+      <button id="saveLocal">Save to Local Storage</button>
+      <button id="newBookBtn">New Book</button>
+    </div>
+    <div class="modal" id="myForm">
+      <div class="modal-inner">
+        <button class="close-button" aria-label="Close alert" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <p>New Book</p>
+        <form id="formBook" method="POST" onsubmit="return false">
+          <label for="book">Book:</label>
+          <input id="bookValue" type="text" name="book" />
+          <label for="author">Author:</label>
+          <input id="authorValue" type="text" name="author" />
+          <label for="pages">Pages:</label>
+          <input id="pagesValue" type="number" name="pages" min="1" />
+          <label for="read">Have you read this book?</label>
+          <input id="readValue" type="checkbox" name="read" />
+          <button id="submitValue" type="text" value="submitChecked">
+            Add New Book
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="tableOuter">
+      <table cellspacing="0" cellpadding="0"></table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
