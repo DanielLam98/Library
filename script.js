@@ -1,6 +1,8 @@
 let myLibrary = [];
 let data = localStorage["myLibrary"];
-myLibrary = JSON.parse(data);
+if (JSON.parse(data).length != 0) {
+  myLibrary = JSON.parse(data);
+}
 displayForm();
 addBookToLibrary();
 displayLibrary();
