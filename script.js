@@ -1,6 +1,6 @@
 let myLibrary = [];
 let data = localStorage["myLibrary"];
-if (JSON.parse(data).length != 0) {
+if (data != undefined && data.length != 0) {
   myLibrary = JSON.parse(data);
 }
 displayForm();
