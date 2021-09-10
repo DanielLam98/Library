@@ -9,16 +9,18 @@ displayLibrary();
 closeButton();
 removeRow();
 saveToLocal();
-function Book(title, author, pages, read) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+class Book {
+  constructor(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+  }
+  info() {
+    return `${this.title} by ${author}, ${pages} pages, ${read}`;
+  }
 }
 
-Book.prototype.info = function () {
-  return `${this.title} by ${author}, ${pages} pages, ${read}`;
-};
 function closeButton() {
   const close = document.querySelector(".close-button");
   const modalClass = document.querySelector(".modal");
